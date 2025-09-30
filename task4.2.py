@@ -6,14 +6,16 @@ arr= {
 }
 
 d= pd.DataFrame(arr)
+print(d)
 
-print("First 3 rows:",d.head(3))
+print("First 3 rows:",d.head(10))
 
 print("name column:",d["Name"])
+
 b=d["Marks"] > 85
 print(d[b])
 
-d["Grade"] = ["B", "A", "C", "A+", "A"] 
+d["Grade"] = ["A+", "A", "C", "A+", "A"] 
 print(d)
 
 c = d.drop(columns=["Age"])
